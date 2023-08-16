@@ -1,0 +1,4 @@
+FROM mysql:latest
+ADD databases/mysql_query.sql docker-entrypoint-initdb.d/mysql_query.sql
+ENV MYSQL_ROOT_PASSWORD root
+EXPOSE 3306
